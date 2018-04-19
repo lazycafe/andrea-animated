@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root,
+.wrapper {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    font-family: "Cerebri Sans", Avenir, Helvetica, Segoe UI, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 25px;
+    color: #4a4a4a;
+    letter-spacing: 1.1px;
+    margin: 0;
+}
+
+.animated-page-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow: scroll;
+}
+
+.nav-on-top {
+    padding-top: 30px;
+}
+
+.top-bar {
+    width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    margin: auto;
+    font-size: 30px;
+    position: relative;
+    z-index: 999;
+
+    .nav-icon {
+        color: black;
+
+        &.laptop:hover {
+            color: #88E870;
+        }
+        &.paintbrush:hover {
+            color: #FFD964;
+        }
+        &.camera:hover {
+            color: #E8644F;
+        }
+        &.businesscard:hover {
+            color: #57E3FF;
+        }
+        &.laptop.active {
+            color: #88E870;
+        }
+        &.paintbrush.active {
+            color: #FFD964;
+        }
+        &.camera.active {
+            color: #E8644F;
+        }
+        &.businesscard.active {
+            color: #57E3FF;
+        }
+    }
+}
+
+.page {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home {
+    height: 100%;
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    margin: 30px;
+    .andrea-title {
+        font-family: 'Lobster Two';
+        font-size: 100px;
+        line-height: 120px;
+    }
+    .andrea-subtitle {
+        font-size: 40px;
+        font-variant: small-caps;
+        letter-spacing: 12px;
+    }
+}
+
+.projects {
+    .project-list-container {
+        width: 80%;
+        margin: 0 auto;
+        line-height: 120px;
+        text-align: center;
+    }
+    .project-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+    .project-list>* {
+        flex: 1 1 160px;
+        margin: 10px;
+      }
+    .thumbnail-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.project-item {
+    .project-description-container {
+        width: 400px;
+    }
+    .project-info {
+        font-style: italic;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .back-icon {
+        cursor: pointer;
+    }
+    .project-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+    }
+    .additional-image {
+        max-width: 700px;
+        padding-bottom: 25px;
+    }
+}
+
+.thumbnail-image {
+    opacity: 0.8;
+}
+.thumbnail-image:hover {
+    opacity: 1;
+}
+
+.body-text {
+    width: 700px;
+}
+
+.photography {
+    .insta-link {
+        color: #E8644F;
+        text-decoration: none; 
+    }
+    .insta-link:hover {
+        color: #854E3E;
+    }
+}
